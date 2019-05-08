@@ -1,0 +1,25 @@
+[package]
+name = "rust-cardano-transaction-importer"
+version = "0.1.0"
+authors = ["Enzo Cioppettini <ecioppettini@atixlabs.com>"]
+edition = "2018"
+
+[dependencies]
+r2d2 = "0.8.4"
+r2d2_sqlite = "0.9.0"
+cardano = { path = "cardano-deps/cardano" }
+exe-common = { path = "cardano-deps/exe-common" }
+storage-units = { path = "cardano-deps/storage-units" }
+reqwest = "0.9.13"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+iron = "0.6.0"
+router = "0.6.0"
+log = "0.4.6"
+env_logger = "0.6.1"
+clap = "2.33.0"
+config = "0.9"
+
+[dependencies.rusqlite]
+version = "0.17.0"
+features = ["bundled"]
